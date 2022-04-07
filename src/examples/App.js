@@ -1,9 +1,11 @@
 import React from "react";
-import { CyberInput } from "../lib";
+ import { CyberInput,CyberButton } from "../lib";
 
 const App = () => (
   <div style={{ width: 640, margin: "15px auto" }}>
-    <CyberInput label="Email Address" placeholder="name@example.com" />
+     <CyberInput label="Input label" placeholder="name@example.com" />
+    
+    <C.CyberButton text="Button"/> 
   </div>
 );
 

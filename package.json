@@ -1,50 +1,49 @@
 {
   "name": "cyberfuture",
-  "version": "0.1.0",
-  "private": false,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^12.1.4",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-scripts": "5.0.0",
-    "react-test-renderer": "^18.0.0",
-    "web-vitals": "^2.1.4"
+  "version": "0.1.24",
+  "description": "CyberFutures React components",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "keywords": [
+    "React",
+    "Cyber",
+    "Futuristic"
+  ],
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/horberlan/CyberFuture"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.6",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.1.4",
+    "react-test-renderer": "^16.3.2",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0-0 || ^17.0.0",
+    "react-dom": "^16.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "test": "react-scripts test",
+    "build-examples": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "clean": "rimraf dist",
+"compile": "npm run clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__",
     "build":
       "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0"
-  },
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "files": [ "dist", "README.md" ],
-  "repository": {
-    "type": "git",
-    "url": "URL_OF_YOUR_REPOSITORY"
   }
 }

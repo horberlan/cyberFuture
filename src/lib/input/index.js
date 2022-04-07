@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-const CyberInput = ({ type = "text", label, value}) => (
+const CyberInput = ({ type = "text", label, value }) => (
   <div className="simple-form-group">
     {label && <label className="simple-text-label">{label}</label>}
     <input

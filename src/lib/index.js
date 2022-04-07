@@ -1,2 +1,3 @@
 import CyberInput from "./input";
-export { CyberInput };
+import CyberButton from './button';
+export { CyberInput, CyberButton };

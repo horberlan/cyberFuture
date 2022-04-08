@@ -1,6 +1,6 @@
 {
   "name": "cyberfuture",
-  "version": "0.1.25",
+  "version": "0.1.2431",
   "description": "CyberFutures React components",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -24,17 +24,17 @@
     "@babel/preset-react": "^7.16.7",
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.6",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "react-scripts": "1.1.4",
-    "react-test-renderer": "^16.3.2",
+    "react-test-renderer": "^18.0.0",
     "webpack": "^4.46.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^3.11.0"
   },
   "peerDependencies": {
-    "react": "^16.8.0-0 || ^17.0.0",
-    "react-dom": "^16.3.2"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -42,8 +42,11 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "clean": "rimraf dist",
-"compile": "npm run clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__",
-    "build":
-      "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
+    "compile": "npm run clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
+  },
+  "dependencies": {
+    "styled-components": "^5.3.5",
+    "styled-system": "^5.1.5"
   }
 }

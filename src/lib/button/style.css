@@ -8,6 +8,7 @@
 }
 body {
   font-family: 'Inter', sans-serif;
+  background: #242424;
 }
 .Cyber-green-button:not(.intoButton) {
   transform: skew(-21deg);

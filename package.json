@@ -1,6 +1,6 @@
 {
   "name": "cyberfuture",
-  "version": "0.1.2431",
+  "version": "0.1.2432",
   "description": "CyberFutures React components",
   "main": "dist/index.js",
   "module": "dist/index.js",

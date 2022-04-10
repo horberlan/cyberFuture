@@ -1,27 +1,26 @@
 .simple-form-group {
-    margin-bottom: 1rem;
-    
-  }
-  .simple-text-label {
-    display: block;
-    color: #2FFF00;
-    font-weight: 700;
-    margin-left:1rem;
-  }
-  .simple-text-input {
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    font-size: 16px;
-    font-weight: 400;
-    border: 3px solid #00dfff;
-    border-radius: 4px;
-    background-color:transparent;
-    padding:.5% 1%;
-    transform: skew(-21deg);
-  }
-  .simple-text-input:active{
-    border: 3px solid #00dfff;
-  }
-  *:focus {
-    outline: none;
+  margin-bottom: 1rem;
+}
+.simple-text-label {
+  display: block;
+  color: #2fff00;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+.simple-text-input {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+  font-weight: 400;
+  border: 3px solid #00dfff;
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 0.5% 1%;
+  transform: skew(-21deg);
+}
+.simple-text-input:active {
+  border: 3px solid #00dfff;
+}
+*:focus {
+  outline: none;
 }

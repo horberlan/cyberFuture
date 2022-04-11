@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card } from '../lib';
+import { Button, Card,CardCarousel } from '../lib';
 import styled from 'styled-components'
 
 
@@ -24,13 +24,16 @@ const App = () => (
       <Button text='Button' variant='AutlinedCyberSly' />
     </Flex>
     <Flex>
-    <Card variant='rose'title="Card Title" End={<Button text='BUTTON' variant='Rose' />}>
+    <Card variant='matrix' title="Card Title" body='some content' end={<Button text='button' variant='Matrix' />}>
     </Card>
-    <Card variant='matrix' title="Card Title" End={<Button text='BUTTON' variant='Matrix' />}>
+    <CardCarousel variant='rose' title="Card Title" body='some content' end={<Button text='button' variant='Rose' />}>
+    </CardCarousel>
+    <Card variant='rose' title="Card Title" body='some content' end={<Button text='button' variant='Rose' />}>
     </Card>
-    <Card variant='rose' title="Card Title" End={<Button text='BUTTON' variant='Rose' />}>
+    
+    <Card variant='rose' title="Card Title" body='some content' end={<Button text='button' variant='Rose' />}>
     </Card>
-    <Card variant='matrix' title="Card Title" End={<Button text='BUTTON' variant='Matrix' />}>
+    <Card variant='matrix' title="Card Title" body={<div>content</div> } end={<Button text='button' variant='Matrix' />}>
     </Card>
     </Flex>
   </div>

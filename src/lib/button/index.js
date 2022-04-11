@@ -188,13 +188,12 @@ const theme = {
 			boxShadow: '0 4px 6px 0 #00ff32',
 		},
 		Rose: {
-			transform: 'skew(-21deg)',
+			transform: 'skew(-31deg)',
 			cursor: 'pointer',
 			padding: '6px 12px',
 			color: '#ff296d',
 			border: '2px solid #ff296d',
 			boxShadow: '0 4px 6px 0 #ff296d',
-			background: 'transparent'
 		},
 		Punk: {
 			transform: 'skew(-21deg)',
@@ -242,9 +241,10 @@ const Span = styled.span`
   letter-spacing: normal;
   transition:1s;
   letter-spacing: .3em;
-
+  transform: skewX(20deg) !important;
 :hover::after {
 	 content: attr(data-text);
+	 transform: skewX(20deg) !important;
 	 position: absolute;
 	 left: 10px;
 	 text-shadow: -1px 0 red;

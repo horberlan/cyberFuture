@@ -15,7 +15,7 @@ var _styledComponents = _interopRequireWildcard(require("styled-components"));
 
 var _styledSystem = require("styled-system");
 
-var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5;
+var _templateObject, _templateObject2, _templateObject3, _templateObject4;
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
@@ -35,9 +35,8 @@ var CyberButton = function CyberButton(_ref) {
   }, text));
 };
 
-var glitchP = (0, _styledComponents.keyframes)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  17% {\n    --scale: 0.87;\n  }\n  31% {\n    --scale: 1.1;\n  }\n  37% {\n    --scale: 1.3;\n  }\n  47% {\n    --scale: 0.91;\n  }\n  87% {\n    --scale: 1;\n  }\n"])));
-var glitchA = (0, _styledComponents.keyframes)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  10%, 30%, 50%, 70%, 90% {\n    --top: 0;\n    --left: 0;\n  }\n  0% {\n    --v-height: 15%;\n  }\n  20% {\n    --left: 0.005;\n  }\n  40% {\n    --left: 0.01;\n    --v-height: 20%;\n    --top: 3;\n  }\n  60% {\n    --left: 0.03;\n    --v-height: 25%;\n    --top: 6;\n  }\n  80% {\n    --left: 0.07;\n    --v-height: 5%;\n    --top: 8;\n  }\n  100% {\n    --left: 0.083;\n    --v-height: 30%;\n    --top: 1;\n  }\n"])));
-var glitchB = (0, _styledComponents.keyframes)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n 10%, 30%, 50%, 70%, 90% {\n    --top: 0;\n    --left: 0;\n  }\n  0% {\n    --v-height: 15%;\n    --top: 10;\n  }\n  20% {\n    --left: -0.005;\n  }\n  40% {\n    --left: -0.01;\n    --v-height: 17%;\n    --top: 3;\n  }\n  60% {\n    --left: -0.03;\n    --v-height: 35%;\n    --top: 6;\n  }\n  80% {\n    --left: -0.07;\n    --v-height: 5%;\n    --top: 8;\n  }\n  100% {\n    --left: -0.083;\n    --v-height: 30%;\n    --top: 1;\n  }\n"])));
+var noise2 = (0, _styledComponents.keyframes)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  0% {\n\t\t clip-path: inset(38% 0 58% 0);\n\t}\n\t 5% {\n\t\t clip-path: inset(29% 0 27% 0);\n\t}\n\t 10% {\n\t\t clip-path: inset(56% 0 21% 0);\n\t}\n\t 15% {\n\t\t clip-path: inset(37% 0 19% 0);\n\t}\n\t 20% {\n\t\t clip-path: inset(14% 0 30% 0);\n\t}\n\t 25% {\n\t\t clip-path: inset(83% 0 18% 0);\n\t}\n\t 30% {\n\t\t clip-path: inset(31% 0 66% 0);\n\t}\n\t 35% {\n\t\t clip-path: inset(91% 0 5% 0);\n\t}\n\t 40% {\n\t\t clip-path: inset(96% 0 2% 0);\n\t}\n\t 45% {\n\t\t clip-path: inset(77% 0 5% 0);\n\t}\n\t 50% {\n\t\t clip-path: inset(1% 0 67% 0);\n\t}\n\t 55% {\n\t\t clip-path: inset(74% 0 7% 0);\n\t}\n\t 60% {\n\t\t clip-path: inset(57% 0 27% 0);\n\t}\n\t 65% {\n\t\t clip-path: inset(51% 0 29% 0);\n\t}\n\t 70% {\n\t\t clip-path: inset(1% 0 60% 0);\n\t}\n\t 75% {\n\t\t clip-path: inset(39% 0 35% 0);\n\t}\n\t 80% {\n\t\t clip-path: inset(53% 0 6% 0);\n\t}\n\t 85% {\n\t\t clip-path: inset(63% 0 17% 0);\n\t}\n\t 90% {\n\t\t clip-path: inset(19% 0 1% 0);\n\t}\n\t 95% {\n\t\t clip-path: inset(21% 0 10% 0);\n\t}\n\t 100% {\n\t\t clip-path: inset(21% 0 58% 0);\n\t}\n"])));
+var noise1 = (0, _styledComponents.keyframes)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  0% {\n\t\t clip-path: inset(6% 0 42% 0);\n\t}\n\t 5% {\n\t\t clip-path: inset(59% 0 29% 0);\n\t}\n\t 10% {\n\t\t clip-path: inset(93% 0 4% 0);\n\t}\n\t 15% {\n\t\t clip-path: inset(100% 0 1% 0);\n\t}\n\t 20% {\n\t\t clip-path: inset(85% 0 15% 0);\n\t}\n\t 25% {\n\t\t clip-path: inset(50% 0 18% 0);\n\t}\n\t 30% {\n\t\t clip-path: inset(67% 0 16% 0);\n\t}\n\t 35% {\n\t\t clip-path: inset(43% 0 48% 0);\n\t}\n\t 40% {\n\t\t clip-path: inset(37% 0 9% 0);\n\t}\n\t 45% {\n\t\t clip-path: inset(91% 0 7% 0);\n\t}\n\t 50% {\n\t\t clip-path: inset(2% 0 72% 0);\n\t}\n\t 55% {\n\t\t clip-path: inset(17% 0 17% 0);\n\t}\n\t 60% {\n\t\t clip-path: inset(13% 0 85% 0);\n\t}\n\t 65% {\n\t\t clip-path: inset(18% 0 38% 0);\n\t}\n\t 70% {\n\t\t clip-path: inset(12% 0 88% 0);\n\t}\n\t 75% {\n\t\t clip-path: inset(42% 0 31% 0);\n\t}\n\t 80% {\n\t\t clip-path: inset(95% 0 2% 0);\n\t}\n\t 85% {\n\t\t clip-path: inset(59% 0 8% 0);\n\t}\n\t 90% {\n\t\t clip-path: inset(24% 0 44% 0);\n\t}\n\t 95% {\n\t\t clip-path: inset(57% 0 5% 0);\n\t}\n\t 100% {\n\t\t clip-path: inset(93% 0 3% 0);\n\t}\n"])));
 var RoseGradient = 'linear-gradient(106deg, #00f6ff 8%, #ffec00 50%, #ff00ec 87%)';
 var CyberSly = 'linear-gradient(106deg, #ffe900 8%, #0043ff 44%, #a200ff 87%)';
 var theme = {
@@ -47,6 +46,11 @@ var theme = {
     cyber: '#edda0c',
     rose: '#ff296d',
     punk: '#8e52f5'
+  },
+  textStyles: {
+    outlined: {
+      transform: 'skew(-21deg)'
+    }
   },
   buttons: {
     AutlinedCyberRose: {
@@ -110,9 +114,9 @@ var theme = {
   }
 };
 
-var BeforeButton = _styledComponents.default.button(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n    border: 0;\n    outline: 0;\n    transition:.4s;\n    \n    &:active{\n    position:relative;\n    top:5px;\n    box-shadow:none;\n  }\n    ", "\n    ", "\n    ", "\n    ", "\n  "])), _styledSystem.color, _styledSystem.space, _styledSystem.fontSize, _styledSystem.buttonStyle);
+var BeforeButton = _styledComponents.default.button(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    border: 0;\n    outline: 0;\n    transition:.4s;\n    margin:5px;\n    \n    &:active{\n    position:relative;\n    top:5px;\n    box-shadow:none;\n  }\n    ", "\n    ", "\n    ", "\n    ", "\n  "])), _styledSystem.color, _styledSystem.space, _styledSystem.fontSize, _styledSystem.buttonStyle);
 
-var Span = _styledComponents.default.span(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n  transform: skew(0deg);\n  font-size: 20px;\n  font-weight: bold;\n  font-stretch: normal;\n  font-style: normal;\n  line-height: normal;\n  letter-spacing: normal;\n  "])));
+var Span = _styledComponents.default.span(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  font-size: 20px;\n  font-weight: bold;\n  font-stretch: normal;\n  font-style: normal;\n  line-height: normal;\n  letter-spacing: normal;\n  transition:1s;\n  letter-spacing: .3em;\n\n:hover::after {\n\t content: attr(data-text);\n\t position: absolute;\n\t left: 10px;\n\t text-shadow: -1px 0 red;\n\t top: 0;\n\t color: white;\n\t background: rgba(0,0,0,0.5);\n\t overflow: hidden;\n\t animation: ", " 2s infinite linear alternate-reverse;\n}\n \n :hover::before {\n\t content: attr(data-text);\n\t position: absolute;\n\t left: 10px;\n\t text-shadow:3px 0 red;\n\t top: 5px;\n\t color: white;\n\t background: rgba(0,0,0,0.5);\n\t overflow: hidden;\n\t animation: ", " 15s infinite linear alternate-reverse;\n}\n  "])), noise1, noise2);
 
 BeforeButton.defaultProps = {
   variant: 'primary',
@@ -123,14 +127,16 @@ BeforeButton.defaultProps = {
 var Button = function Button(_ref2) {
   var text = _ref2.text,
       variant = _ref2.variant,
-      color = _ref2.color;
+      color = _ref2.color,
+      type = _ref2.type;
   return /*#__PURE__*/_react.default.createElement(_styledComponents.ThemeProvider, {
     theme: theme
   }, /*#__PURE__*/_react.default.createElement(BeforeButton, {
-    type: "type",
     color: color,
     variant: variant
-  }, /*#__PURE__*/_react.default.createElement(Span, null, text)));
+  }, /*#__PURE__*/_react.default.createElement(Span, {
+    "data-text": text
+  }, text)));
 };
 
 exports.Button = Button;

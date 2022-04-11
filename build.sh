@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Just so no one forgets to run npm build before..."
-# its preferend publish with yarn, it updating version automatic
+echo "Just in case you have forgotten how to run 'npm build'..."
+# It is recommended to publish with yarn, as it updates automaticly
 sudo npm run build &&
 yarn publish

@@ -1,10 +1,10 @@
 {
   "name": "cyberfuture",
-  "version": "0.1.2434",
+  "version": "0.1.2435",
+  "license": "MIT",
   "description": "CyberFutures React components",
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "license": "MIT",
   "keywords": [
     "React",
     "Cyber",

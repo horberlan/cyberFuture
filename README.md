@@ -10,12 +10,13 @@ With this library you can change the visual of your components to give your app 
 ### Components:
 You can install our library and import the button component:
 ```javascript
-import {CyberButton} from 'cyberfuture'
+import {CyberButton, Card} from 'cyberfuture'
 ```
 and use it with the some of the props we deployed. For instance:
 ```html
 <Button text='Button' variant='Matrix' color='Gold' />
 <Button text='Button' variant='AutlinedCyberRose' color='matrix' />
+<Card variant='matrix' title="Card Title" End={<Button text='BUTTON' variant='Matrix' />}/>
 ```
 
 ### Variants: 

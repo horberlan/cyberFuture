@@ -86,7 +86,8 @@ const CardtBody = styled.div`
     justify-content:center;
     align-items:center;
     position:relative;
-    background:linear-gradient(106deg, #00f6ff 8%, #ffec00 50%, #ff00ec 87%);
+    /* background:linear-gradient(106deg, #00f6ff 8%, #ffec00 50%, #ff00ec 87%); */
+    background:#8e52f5;
     width:100px;
     height:80%;
     border-radius: 0.25rem;

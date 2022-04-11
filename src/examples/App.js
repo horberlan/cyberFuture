@@ -23,8 +23,16 @@ const App = () => (
       <Button text='Button' variant='Gold' />
       <Button text='Button' variant='AutlinedCyberSly' />
     </Flex>
-    <Card title="Card Title" End={<Button text='BUTTON' variant='Rose' />}>
+    <Flex>
+    <Card variant='rose'title="Card Title" End={<Button text='BUTTON' variant='Rose' />}>
     </Card>
+    <Card variant='matrix' title="Card Title" End={<Button text='BUTTON' variant='Matrix' />}>
+    </Card>
+    <Card variant='rose' title="Card Title" End={<Button text='BUTTON' variant='Rose' />}>
+    </Card>
+    <Card variant='matrix' title="Card Title" End={<Button text='BUTTON' variant='Matrix' />}>
+    </Card>
+    </Flex>
   </div>
 );
 

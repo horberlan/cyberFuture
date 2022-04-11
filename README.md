@@ -2,7 +2,7 @@
 
 Times change and apps needs to adapt to those changes❗
 
-With this library you can change the visual of your buttons to give your app a more "cybish" aspect. 
+With this library you can change the visual of your components to give your app a more "cybish" aspect. 
 
 🚧 This library is still under development, but you can try some components and collaborate at will. 🚧
 
@@ -31,11 +31,11 @@ And these are the types we have deployed by now:
 * outlined;
 * contained;
 
-
+<br/>
 👩‍💻 We are building a webpage for showing our components.
-
+<br/>
 But, we are very busy. Please, be patient... 
-<br>
-<br>
+<br/>
+<br/>
 <img src="https://media.giphy.com/media/1aIDN81XDJuDK/giphy.gif"/>
 

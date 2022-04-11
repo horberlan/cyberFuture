@@ -34,9 +34,10 @@ const BeforeCard = styled('div')({
                 border: '4px solid #ff296d',
                 '&:before': { background: '#ff296d', }
             },
-            secondary: {
+            matrix: {
                 color: 'white',
-                bg: 'secondary',
+                border: '4px solid #00ff32',
+                '&:before': { background: '#00ff32', }
             },
         }
     })
@@ -52,6 +53,7 @@ height: 40%;
 box-sizing: border-box;
 padding:1% 2%;
 letter-spacing:.2em;
+font-weight: bold;
 `;
 const CardtBody = styled.div`
     position:relative;
@@ -107,16 +109,16 @@ margin: auto auto;
 
 
 
-export const Card = ({ title, End }) => {
+export const Card = ({ title, End, CardBody,variant}) => {
     return (
-        <BeforeCard variant="rose">
+        <BeforeCard variant={variant}>
             <CardtTitle>{title}</CardtTitle>
             <CardtBody>
-                <div>content</div>
-                <div>content</div>
-                <div>content</div>
-                <div>content</div>
-                <div>content</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
             </CardtBody>
             <CardtFooter>{End}</CardtFooter>
         </BeforeCard>

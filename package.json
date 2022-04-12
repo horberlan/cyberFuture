@@ -1,6 +1,6 @@
 {
   "name": "cyberfuture",
-  "version": "0.1.23",
+  "version": "0.1.25",
   "license": "MIT",
   "description": "CyberFutures React components",
   "main": "dist/index.js",
@@ -18,12 +18,10 @@
     "url": "https://github.com/horberlan/CyberFuture"
   },
   "devDependencies": {
-    "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.9",
     "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
-    "babel-cli": "^7.0.0-0",
     "babel-loader": "^8.0.6",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -47,6 +45,7 @@
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
   },
   "dependencies": {
+    "@babel/cli": "^7.17.6",
     "styled-components": "^5.3.5",
     "styled-system": "^5.1.5"
   }

@@ -1,6 +1,6 @@
 {
   "name": "cyberfuture",
-  "version": "0.1.2435",
+  "version": "0.1.23",
   "license": "MIT",
   "description": "CyberFutures React components",
   "main": "dist/index.js",
@@ -23,7 +23,7 @@
     "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
-    "babel-cli": "^6.26.0",
+    "babel-cli": "^7.0.0-0",
     "babel-loader": "^8.0.6",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",

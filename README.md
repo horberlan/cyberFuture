@@ -10,7 +10,7 @@ With this library you can change the visual of your components to give your app 
 ### Components:
 You can install our library and import the button component:
 ```javascript
-import {CyberButton, Card} from 'cyberfuture'
+import {Button, Card} from 'cyberfuture'
 ```
 and use it with the some of the props we deployed. For instance:
 ```html

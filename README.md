@@ -1,8 +1,8 @@
 <h1 align="center"> Cyberfuture </h1>
 <div>
-  <img alt="npm" src="https://img.shields.io/npm/dm/cyberfuture?style=flat-square">
-  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/horberlan/CyberFuture?style=flat-square">
-  <img alt="Snyk Vulnerabilities for npm package" src="https://img.shields.io/snyk/vulnerabilities/npm/cyberfuture?style=flat-square">
+  <img align="left" alt="npm" src="https://img.shields.io/npm/dm/cyberfuture?style=flat-square">
+  <img align="right" alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/horberlan/CyberFuture?style=flat-square">
+  <img align="right" alt="Snyk Vulnerabilities for npm package" src="https://img.shields.io/snyk/vulnerabilities/npm/cyberfuture?style=flat-square">
 </div>
 <br/><br/>
 Times change and apps needs to adapt to those changes❗

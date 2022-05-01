@@ -159,7 +159,7 @@ const theme = {
 		}
 	},
 	buttons: {
-		AutlinedCyberRose: {
+		OutlinedCyberRose: {
 			transform: 'skew(-21deg)',
 			color: '#ff296d',
 			cursor: 'pointer',
@@ -169,7 +169,7 @@ const theme = {
 			borderWidth: '2px',
 			borderImageSource: `${RoseGradient}`,
 		},
-		AutlinedCyberSly: {
+		OutlinedCyberSly: {
 			transform: 'skew(-21deg)',
 			color: '#0043FF',
 			cursor: 'pointer',
@@ -270,7 +270,7 @@ const Span = styled.span`
 BeforeButton.defaultProps = {
 	variant: 'primary',
 	backgroundColor: 'transparent',
-	type: 'autlined'
+	type: 'Outlined'
 }
 
 export const Button = ({ text, variant, color, type }) => {

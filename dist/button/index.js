@@ -53,7 +53,7 @@ var theme = {
     }
   },
   buttons: {
-    AutlinedCyberRose: {
+    OutlinedCyberRose: {
       transform: 'skew(-21deg)',
       color: '#ff296d',
       cursor: 'pointer',
@@ -63,7 +63,7 @@ var theme = {
       borderWidth: '2px',
       borderImageSource: "".concat(RoseGradient)
     },
-    AutlinedCyberSly: {
+    OutlinedCyberSly: {
       transform: 'skew(-21deg)',
       color: '#0043FF',
       cursor: 'pointer',
@@ -121,7 +121,7 @@ var Span = _styledComponents.default.span(_templateObject4 || (_templateObject4 
 BeforeButton.defaultProps = {
   variant: 'primary',
   backgroundColor: 'transparent',
-  type: 'autlined'
+  type: 'Outlined'
 };
 
 var Button = function Button(_ref2) {

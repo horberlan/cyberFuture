@@ -17,11 +17,11 @@ const App = () => (
   <div>
     <Flex>
       <Button outline text='CyberFuture' variant='Matrix' color='matrix' />
-      <Button text='Getelementbyid' variant='AutlinedCyberRose' type="outlined" />
+      <Button text='Getelementbyid' variant='OutlinedCyberRose' type="outlined" />
       <Button text='Lane Art Design' variant='Rose' />
       <Button text='Button' variant='Punk' />
       <Button text='Button' variant='Gold' />
-      <Button text='Button' variant='AutlinedCyberSly' />
+      <Button text='Button' variant='OutlinedCyberSly' />
     </Flex>
     <Flex>
     <Card variant='rose'title="Card Title" End={<Button text='BUTTON' variant='Rose' />}>

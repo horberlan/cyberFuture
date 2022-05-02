@@ -20,8 +20,8 @@ import {Button, Card} from 'cyberfuture'
 and use it with the some of the props we deployed. For instance:
 ```html
 <Button text='Button' variant='Matrix' color='Gold' />
-<Button text='Button' variant='AutlinedCyberRose' color='matrix' />
-<Card variant='matrix' title="Card Title" End={<Button text='BUTTON' variant='Matrix'/>}/>
+<Button text='Button' variant='OutlinedCyberRose' color='matrix' />
+<Card variant='matrix' title="Card Title" End={<Button text='BUTTON' variant='Matrix' />}/>
 ```
 
 ### Variants: 

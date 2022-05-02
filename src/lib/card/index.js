@@ -147,4 +147,3 @@ export const CardCarousel = ({ title, body, end, CardBody, variant }) => {
     );
 };
 
-

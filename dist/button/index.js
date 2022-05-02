@@ -82,13 +82,12 @@ var theme = {
       boxShadow: '0 4px 6px 0 #00ff32'
     },
     Rose: {
-      transform: 'skew(-21deg)',
+      transform: 'skew(-31deg)',
       cursor: 'pointer',
       padding: '6px 12px',
       color: '#ff296d',
       border: '2px solid #ff296d',
-      boxShadow: '0 4px 6px 0 #ff296d',
-      background: 'transparent'
+      boxShadow: '0 4px 6px 0 #ff296d'
     },
     Punk: {
       transform: 'skew(-21deg)',
@@ -116,7 +115,7 @@ var theme = {
 
 var BeforeButton = _styledComponents.default.button(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    border: 0;\n    outline: 0;\n    transition:.4s;\n    margin:5px;\n    \n    &:active{\n    position:relative;\n    top:5px;\n    box-shadow:none;\n  }\n    ", "\n    ", "\n    ", "\n    ", "\n  "])), _styledSystem.color, _styledSystem.space, _styledSystem.fontSize, _styledSystem.buttonStyle);
 
-var Span = _styledComponents.default.span(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  font-size: 20px;\n  font-weight: bold;\n  font-stretch: normal;\n  font-style: normal;\n  line-height: normal;\n  letter-spacing: normal;\n  transition:1s;\n  letter-spacing: .3em;\n\n:hover::after {\n\t content: attr(data-text);\n\t position: absolute;\n\t left: 10px;\n\t text-shadow: -1px 0 red;\n\t top: 0;\n\t color: white;\n\t background: rgba(0,0,0,0.5);\n\t overflow: hidden;\n\t animation: ", " 2s infinite linear alternate-reverse;\n}\n \n :hover::before {\n\t content: attr(data-text);\n\t position: absolute;\n\t left: 10px;\n\t text-shadow:3px 0 red;\n\t top: 5px;\n\t color: white;\n\t background: rgba(0,0,0,0.5);\n\t overflow: hidden;\n\t animation: ", " 15s infinite linear alternate-reverse;\n}\n  "])), noise1, noise2);
+var Span = _styledComponents.default.span(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  font-size: 20px;\n  font-weight: bold;\n  font-stretch: normal;\n  font-style: normal;\n  line-height: normal;\n  letter-spacing: normal;\n  transition:1s;\n  letter-spacing: .3em;\n  transform: skewX(20deg) !important;\n:hover::after {\n\t content: attr(data-text);\n\t transform: skewX(20deg) !important;\n\t position: absolute;\n\t left: 10px;\n\t text-shadow: -1px 0 red;\n\t top: 0;\n\t color: white;\n\t background: rgba(0,0,0,0.5);\n\t overflow: hidden;\n\t animation: ", " 2s infinite linear alternate-reverse;\n}\n \n :hover::before {\n\t content: attr(data-text);\n\t position: absolute;\n\t left: 10px;\n\t text-shadow:3px 0 red;\n\t top: 5px;\n\t color: white;\n\t background: rgba(0,0,0,0.5);\n\t overflow: hidden;\n\t animation: ", " 15s infinite linear alternate-reverse;\n}\n  "])), noise1, noise2);
 
 BeforeButton.defaultProps = {
   variant: 'primary',

@@ -17,6 +17,12 @@ Object.defineProperty(exports, "Card", {
     return _card.Card;
   }
 });
+Object.defineProperty(exports, "CardCarousel", {
+  enumerable: true,
+  get: function get() {
+    return _card.CardCarousel;
+  }
+});
 Object.defineProperty(exports, "CyberButton", {
   enumerable: true,
   get: function get() {

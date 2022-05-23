@@ -25,11 +25,11 @@
     "babel-loader": "^8.0.6",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-scripts": "1.1.4",
+    "react-scripts": "^5.0.1",
     "react-test-renderer": "^18.0.0",
-    "webpack": "^4.46.0",
+    "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^4.9.0"
   },
   "peerDependencies": {
     "react": "^18.0.0",
@@ -42,7 +42,7 @@
     "eject": "react-scripts eject",
     "clean": "rimraf dist",
     "compile": "npm run clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
+    "build": "babel src -d lib"
   },
   "dependencies": {
     "@babel/cli": "^7.17.6",

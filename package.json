@@ -1,6 +1,6 @@
 {
   "name": "cyberfuture",
-  "version": "0.1.28",
+  "version": "0.1.30",
   "license": "MIT",
   "description": "CyberFutures React components",
   "main": "dist/index.js",
@@ -48,5 +48,17 @@
     "@babel/cli": "^7.17.6",
     "styled-components": "^5.3.5",
     "styled-system": "^5.1.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

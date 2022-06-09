@@ -27,31 +27,31 @@ const App = () => (
     </Flex>
     <Flex>
       <Card
-        variant="matrix"
+        variant="Matrix"
         title="Card Title"
         body="some content"
         end={<Button text="button" variant="Matrix" />}
       ></Card>
       <CardCarousel
-        variant="rose"
+        variant="Rose"
         title="Card Title"
         body="some content"
         end={<Button text="button" variant="Rose" />}
       ></CardCarousel>
       <Card
-        variant="rose"
+        variant="Rose"
         title="Card Title"
         body="some content"
         end={<Button text="button" variant="Rose" />}
       ></Card>
       <Card
-        variant="rose"
+        variant="Rose"
         title="Card Title"
         body="some content"
         end={<Button text="button" variant="Rose" />}
       ></Card>
       <Card
-        variant="matrix"
+        variant="Matrix"
         title="Card Title"
         body={<div>content</div>}
         end={<Button text="button" variant="Matrix" />}

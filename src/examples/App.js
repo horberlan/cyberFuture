@@ -23,7 +23,7 @@ const App = () => (
       <Button text="Lane Art Design" variant="Rose" />
       <Button text="Button" variant="Punk" />
       <Button text="Button" variant="Gold" />
-      <Button text="Button" variant="OutlinedCyberSly" />
+      <Button text="Button" variant="OutlinedCyberSky" />
     </Flex>
     <Flex>
       <Card

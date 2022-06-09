@@ -169,7 +169,7 @@ const theme = {
 			borderWidth: '2px',
 			borderImageSource: `${RoseGradient}`,
 		},
-		OutlinedCyberSly: {
+		OutlinedCyberSky: {
 			transform: 'skew(-21deg)',
 			color: '#0043FF',
 			cursor: 'pointer',

@@ -152,7 +152,7 @@ var theme = {
       borderWidth: "2px",
       borderImageSource: "".concat(RoseGradient),
     },
-    OutlinedCyberSly: {
+    OutlinedCyberSky: {
       transform: "skew(-21deg)",
       color: "#0043FF",
       cursor: "pointer",

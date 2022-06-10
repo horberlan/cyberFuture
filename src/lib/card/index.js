@@ -60,13 +60,6 @@ const BeforeCard = styled('div')({
               '&:before': {
                 background: '#95f11c'
               }
-            },
-            Punk: {
-              color: 'white',
-              border: '4px solid #8e52f5',
-              '&:before': {
-                background: '#8e52f5'
-              }
             }
           }
     })

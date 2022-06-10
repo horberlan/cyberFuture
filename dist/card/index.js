@@ -45,18 +45,32 @@ var BeforeCard = (0, _styledComponents.default)('div')({
   }
 }, (0, _styledSystem.variant)({
   variants: {
-    rose: {
+    Rose: {
       color: 'white',
       border: '4px solid #ff296d',
       '&:before': {
         background: '#ff296d'
       }
     },
-    matrix: {
+    Matrix: {
       color: 'white',
       border: '4px solid #00ff32',
       '&:before': {
         background: '#00ff32'
+      }
+    },
+    Punk: {
+      color: 'white',
+      border: '4px solid #8e52f5',
+      '&:before': {
+        background: '#8e52f5'
+      }
+    },
+    Gold: {
+      color: 'white',
+      border: '4px solid #95f11c',
+      '&:before': {
+        background: '#95f11c'
       }
     }
   }

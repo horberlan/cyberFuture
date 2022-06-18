@@ -127,7 +127,7 @@ var noise1 = (0, _styledComponents.keyframes)(
 );
 var RoseGradient =
   "linear-gradient(106deg, #00f6ff 8%, #ffec00 50%, #ff00ec 87%)";
-var CyberSly = "linear-gradient(106deg, #ffe900 8%, #0043ff 44%, #a200ff 87%)";
+var CyberSky = "linear-gradient(106deg, #ffe900 8%, #0043ff 44%, #a200ff 87%)";
 var theme = {
   colors: {
     matrix: "#00ff32",
@@ -160,7 +160,7 @@ var theme = {
       border: "2px solid",
       borderImageSlice: "1",
       borderWidth: "2px",
-      borderImageSource: "".concat(CyberSly),
+      borderImageSource: "".concat(CyberSky),
     },
     Matrix: {
       transform: "skew(-21deg)",

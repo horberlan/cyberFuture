@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.css";
 
 const CyberInput = ({ type = "text", label, value }) => (
   <div className="simple-form-group">

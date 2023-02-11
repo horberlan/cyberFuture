@@ -1,5 +1,6 @@
-import React from "react";
 import { Button, Card, CardCarousel } from "../lib";
+
+import React from "react";
 import styled from "styled-components";
 
 const Flex = styled.div`
@@ -14,50 +15,87 @@ const Flex = styled.div`
 const App = () => (
   <div>
     <Flex>
-      <Button outline text="CyberFuture" variant="Matrix" color="matrix" />
-      <Button
-        text="Getelementbyid"
-        variant="OutlinedCyberRose"
-        type="outlined"
-      />
-      <Button text="Lane Art Design" variant="Rose" />
-      <Button text="Button" variant="Punk" />
-      <Button text="Button" variant="Gold" />
-      <Button text="Button" variant="OutlinedCyberSky" />
+      {buttons.map(({ props }, index) => {
+        return <Button key={index} {...props} />;
+      })}
     </Flex>
     <Flex>
-      <Card
-        variant="Matrix"
-        title="Card Title"
-        body="some content"
-        end={<Button text="button" variant="Matrix" />}
-      ></Card>
-      <CardCarousel
-        variant="Rose"
-        title="Card Title"
-        body="some content"
-        end={<Button text="button" variant="Rose" />}
-      ></CardCarousel>
-      <Card
-        variant="Rose"
-        title="Card Title"
-        body="some content"
-        end={<Button text="button" variant="Rose" />}
-      ></Card>
-      <Card
-        variant="Rose"
-        title="Card Title"
-        body="some content"
-        end={<Button text="button" variant="Rose" />}
-      ></Card>
-      <Card
-        variant="Matrix"
-        title="Card Title"
-        body={<div>content</div>}
-        end={<Button text="button" variant="Matrix" />}
-      ></Card>
+      {cards.map(({ Component, props }, index) => {
+        return <Component key={index} {...props} />;
+      })}
     </Flex>
   </div>
 );
 
 export default App;
+const buttons = [
+  {
+    props: {
+      text: "CyberFuture",
+      variant: "Matrix",
+      color: "matrix",
+      outline: true,
+    },
+  },
+  {
+    props: {
+      text: "CyberFuture",
+      variant: "Rose",
+    },
+  },
+  {
+    props: {
+      text: "CyberFuture",
+      variant: "Punk",
+    },
+  },
+  {
+    props: {
+      text: "CyberFuture",
+      variant: "Gold",
+    },
+  },
+  {
+    props: {
+      text: "CyberFuture",
+      variant: "OutlinedCyberSky",
+    },
+  },
+];
+
+const cards = [
+  {
+    Component: Card,
+    props: {
+      variant: "Matrix",
+      title: "Matrix Title",
+      body: "some content",
+      background: "#8B0000",
+    },
+  },
+  {
+    Component: CardCarousel,
+    props: {
+      variant: "Rose",
+      title: "Rose Title",
+      body: "some content",
+    },
+  },
+  {
+    Component: Card,
+    props: {
+      variant: "Matrix",
+      title: "Matrix Title",
+      body: "some content",
+      background: "orange",
+    },
+  },
+  {
+    Component: Card,
+    props: {
+      variant: "Matrix",
+      title: "Matrix Title",
+      body: "some content",
+    },
+  },
+];

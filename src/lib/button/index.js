@@ -1,5 +1,4 @@
 import React from 'react'
-import './style.css'
 import styled, { ThemeProvider, keyframes } from 'styled-components'
 import { color, space, fontSize, buttonStyle } from 'styled-system';
 

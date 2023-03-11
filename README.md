@@ -115,6 +115,7 @@ The variant of the card style. Can be one of the following:
 * Rose
 * Punk
 * Gold
+
 `background` (string)
 The background color of the card. Defaults to rgba(17, 25, 40, 0.75).
 

@@ -7,7 +7,7 @@
 <br/><br/>
 Times change and apps needs to adapt to those changes❗
 
-The Cyberfuture library provides several components for React that can be used to quickly and easily create styled and customizable user interfaces.
+The Cyberfuture pachage provides several components for React that can be used to quickly and easily create styled and customizable user interfaces.
 
 All of these components can be customized using CSS variables or by passing in props to modify their appearance and behavior. By using the Cyberfuture package, developers can save time and effort when building user interfaces and create more visually appealing and engaging experiences for their users.
 

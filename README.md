@@ -39,7 +39,6 @@ CSS Variable	Default Value	Description
 Here's an example of how to modify these CSS variables:
 
 ```css
-Copy code
 .Cyber-green-button {
   --cyber-button-color: #000;
   --cyber-button-background: linear-gradient(106deg, #ff296d 8%, #8e52f5 44%, #95f11c 87%);
@@ -55,7 +54,7 @@ A styled card component for React with customizable styles and a responsive layo
 ### Usage
 
 ```javascript
-import { Card } from "./Card";
+import { Card } from "cyberfuture";
 
 <Card 
   title="Card Title"
@@ -92,7 +91,7 @@ A variation of the Card component that includes a horizontal carousel of card bo
 ### Usage
 
 ```javascript
-import { CardCarousel } from "./Card";
+import { CardCarousel } from "cyberfuture";
 
 <CardCarousel 
   title="Carousel Title"
@@ -130,9 +129,8 @@ The component accepts the following props:
 `value` (string): the value of the input element.
 #### Example Usage
 ```jsx
-Copy code
 import React, { useState } from "react";
-import CyberInput from "./CyberInput";
+import { CyberInput } from "cyberfuture";
 
 const MyForm = () => {
   const [username, setUsername] = useState("");

@@ -1,6 +1,6 @@
 {
   "name": "cyberfuture",
-  "version": "0.1.39",
+  "version": "0.1.40",
   "license": "MIT",
   "description": "CyberFutures React components",
   "main": "dist/index.js",

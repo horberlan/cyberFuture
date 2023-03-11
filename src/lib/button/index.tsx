@@ -1,13 +1,7 @@
 import React from "react";
 import styled, { ThemeProvider, keyframes } from "styled-components";
 import { color, space, fontSize, buttonStyle } from "styled-system";
-
-type ButtonProps = {
-  text: string;
-  variant: string;
-  color: string;
-  type: string;
-};
+import { ButtonProps, ThemeProps } from "../types";
 
 const CyberButton: React.FC<ButtonProps> = ({ text }) => (
   <button className="Cyber-green-button">
@@ -154,79 +148,6 @@ const RoseGradient =
 const CyberSky =
   "linear-gradient(106deg, #ffe900 8%, #0043ff 44%, #a200ff 87%)";
 
-interface ThemeProps {
-  colors: {
-    matrix: string,
-    gold: string,
-    cyber: string,
-    rose: string,
-    punk: string,
-  };
-  textStyles: {
-    outlined: {
-      transform: string,
-    },
-  };
-  buttons: {
-    OutlinedCyberRose: {
-      transform: string,
-      color: string,
-      cursor: string,
-      padding: string,
-      border: string,
-      borderImageSlice: string,
-      borderWidth: string,
-      borderImageSource: string,
-    },
-    OutlinedCyberSky: {
-      transform: string,
-      color: string,
-      cursor: string,
-      padding: string,
-      border: string,
-      borderImageSlice: string,
-      borderWidth: string,
-      borderImageSource: string,
-    },
-    Matrix: {
-      transform: string,
-      cursor: string,
-      padding: string,
-      border: string,
-      color: string,
-      boxShadow: string,
-    },
-    Rose: {
-      transform: string,
-      cursor: string,
-      padding: string,
-      color: string,
-      border: string,
-      boxShadow: string,
-    },
-    Punk: {
-      transform: string,
-      cursor: string,
-      padding: string,
-      color: string,
-      border: string,
-      boxShadow: string,
-    },
-    Gold: {
-      transform: string,
-      cursor: string,
-      padding: string,
-      color: string,
-      border: string,
-      boxShadow: string,
-    },
-  };
-  bg: {
-    type: {
-      background: string,
-    },
-  };
-}
 
 const theme: ThemeProps = {
   colors: {

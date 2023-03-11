@@ -1,15 +1,7 @@
 import React from "react";
 import styled, { CSSProperties } from "styled-components";
 import { variant, VariantProps } from "styled-system";
-
-interface CardProps {
-  title: string;
-  body: React.ReactNode;
-  end: React.ReactNode;
-  CardBody?: React.ReactNode;
-  variant?: VariantProps["variant"];
-  background?: CSSProperties["background"];
-}
+import { CardProps } from "../types";
 
 interface CardCarouselProps extends CardProps {}
 

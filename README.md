@@ -7,9 +7,10 @@
 <br/><br/>
 Times change and apps needs to adapt to those changes❗
 
-With this library you can change the visual of your components to give your app a more "cybish" aspect. 
+The Cyberfuture library provides several components for React that can be used to quickly and easily create styled and customizable user interfaces.
 
-🚧 This library is still under development, but you can try some components and collaborate at will. 🚧
+All of these components can be customized using CSS variables or by passing in props to modify their appearance and behavior. By using the Cyberfuture package, developers can save time and effort when building user interfaces and create more visually appealing and engaging experiences for their users.
+
 
 ## CyberButton Component
 The CyberButton component is a customizable button with an animated clip-path effect. It receives a text prop, which sets the text that appears inside the button.

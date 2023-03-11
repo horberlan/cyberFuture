@@ -21,7 +21,7 @@ The CyberButton component is a customizable button with an animated clip-path ef
 text	string	Yes	-	The text that appears inside the button.
 
 ```jsx
-import CyberButton from './CyberButton';
+import { CyberButton } from 'cyberfuture';
 function App() {
   return (
     <div>

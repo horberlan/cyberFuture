@@ -1,6 +1,12 @@
-import React from "react";
+import React, { FC } from "react";
 
-const CyberInput = ({ type = "text", label, value }) => (
+interface Props {
+  type?: string;
+  label?: string;
+  value: string;
+}
+
+const CyberInput: FC<Props> = ({ type = "text", label, value }) => (
   <div className="simple-form-group">
     {label && <label className="simple-text-label">{label}</label>}
     <input

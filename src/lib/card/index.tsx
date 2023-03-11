@@ -1,8 +1,21 @@
 import React from "react";
-import styled from "styled-components";
-import { variant } from "styled-system";
+import styled, { CSSProperties } from "styled-components";
+import { variant, VariantProps } from "styled-system";
 
-const BeforeCard = styled("div")(
+interface CardProps {
+  title: string;
+  body: React.ReactNode;
+  end: React.ReactNode;
+  CardBody?: React.ReactNode;
+  variant?: VariantProps["variant"];
+  background?: CSSProperties["background"];
+}
+
+interface CardCarouselProps extends CardProps {}
+
+interface BeforeCardProps extends CSSProperties, VariantProps {}
+
+const BeforeCard = styled("div")<BeforeCardProps>(
   {
     position: "relative",
     width: "calc(350px - 2vmin)",
@@ -61,6 +74,7 @@ const BeforeCard = styled("div")(
     },
   })
 );
+
 const CardtTitle = styled.div`
   display: flex;
   word-break: break-all;
@@ -74,6 +88,7 @@ const CardtTitle = styled.div`
   letter-spacing: 0.2em;
   font-weight: bold;
 `;
+
 const CardtBody = styled.div`
   position: relative;
   word-break: break-all;
@@ -115,6 +130,7 @@ const CardtBody = styled.div`
     user-select: none;
   }
 `;
+
 const CardtFooter = styled.div`
   position: relative;
   top: 10%;
@@ -127,22 +143,8 @@ const CardtFooter = styled.div`
   padding: 2% 4%;
   margin: auto auto;
 `;
-export const Card = ({ title, body, end, CardBody, variant, background }) => {
-  return (
-    <BeforeCard
-      variant={variant}
-      style={{
-        background:
-          background === undefined ? "rgba(17, 25, 40, 0.75)" : background,
-      }}>
-      <CardtTitle>{title}</CardtTitle>
-      <CardtBody>{body}</CardtBody>
-      <CardtFooter>{end}</CardtFooter>
-    </BeforeCard>
-  );
-};
 
-export const CardCarousel = ({
+export const Card: React.FC<CardProps> = ({
   title,
   body,
   end,
@@ -156,7 +158,31 @@ export const CardCarousel = ({
       style={{
         background:
           background === undefined ? "rgba(17, 25, 40, 0.75)" : background,
-      }}>
+      }}
+    >
+      <CardtTitle>{title}</CardtTitle>
+      <CardtBody>{body}</CardtBody>
+      <CardtFooter>{end}</CardtFooter>
+    </BeforeCard>
+  );
+};
+
+export const CardCarousel: React.FC<CardCarouselProps> = ({
+  title,
+  body,
+  end,
+  CardBody,
+  variant,
+  background,
+}) => {
+  return (
+    <BeforeCard
+      variant={variant}
+      style={{
+        background:
+          background === undefined ? "rgba(17, 25, 40, 0.75)" : background,
+      }}
+    >
       <CardtTitle>{title}</CardtTitle>
       <CardtBody>
         <div>content</div>

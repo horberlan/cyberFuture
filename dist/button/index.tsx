@@ -1,15 +1,8 @@
-import React from "react";
-import styled, { ThemeProvider, keyframes } from "styled-components";
-import { color, space, fontSize, buttonStyle } from "styled-system";
 import { ButtonProps, ThemeProps } from "../types";
+import { buttonStyle, color, fontSize, space } from "styled-system";
+import styled, { ThemeProvider, keyframes } from "styled-components";
 
-const CyberButton: React.FC<ButtonProps> = ({ text }) => (
-  <button className="Cyber-green-button">
-    <span data-text={text} className="intoButton">
-      {text}
-    </span>
-  </button>
-);
+import React from "react";
 
 const noise2 = keyframes`
   0% {
@@ -287,4 +280,4 @@ const Button = ({ text, variant, color }: ButtonProps) => {
   );
 };
 
-export {CyberButton, Button};
+export { Button };

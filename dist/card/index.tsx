@@ -1,10 +1,8 @@
-import styled, { CSSProperties } from "styled-components";
-import { variant } from "styled-system";
 import { CardProps } from "../types";
+import styled from "styled-components";
+import { variant } from "styled-system";
 
 interface CardCarouselProps extends CardProps {}
-
-interface BeforeCardProps extends CSSProperties {}
 
 const BeforeCard = styled("div")(
   {

@@ -1,12 +1,12 @@
-import React from "react";
 import { CSSProperties } from "styled-components";
 
 // buttons props
 export type ButtonProps = {
-  text: string;
+  text?: string;
   variant: string;
-  color: string;
-  type: string;
+  color?: string;
+  type?: string | undefined;
+  outline?: boolean;
 };
 export interface ThemeProps {
   colors: {
@@ -85,8 +85,8 @@ export interface ThemeProps {
 export interface CardProps {
     title: string;
     body: React.ReactNode;
-    end: React.ReactNode;
+    end?: React.ReactNode;
     CardBody?: React.ReactNode;
-    variant?: any;
+    variant: string;
     background?: CSSProperties["background"];
   }

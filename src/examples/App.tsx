@@ -1,26 +1,8 @@
-import { Button, Card, CardCarousel } from "../lib";
+import { Card, CardCarousel, CyberButton } from "../lib";
 
-import React, { FC } from "react";
-import styled from "styled-components";
 import { ButtonProps } from "../lib/types";
-
-interface CardProps {
-  variant?: string;
-  title?: string;
-  body?: string;
-  background?: string;
-}
-
-interface CardCarouselProps {
-  variant: string;
-  title: string;
-  body: string;
-}
-
-interface CardObject {
-  Component: React.FC<CardProps | CardCarouselProps>;
-  props: CardProps | CardCarouselProps;
-}
+import React from "react";
+import styled from "styled-components";
 
 interface ButtonObject {
   props: ButtonProps;
@@ -39,7 +21,7 @@ const App = () => (
   <div>
     <Flex>
       {buttons.map(({ props }, index) => {
-        return <Button key={index} {...props} />;
+        return <CyberButton key={index} {...props} />;
       })}
     </Flex>
     <Flex>

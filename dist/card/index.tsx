@@ -1,13 +1,12 @@
-import React from "react";
 import styled, { CSSProperties } from "styled-components";
-import { variant, VariantProps } from "styled-system";
+import { variant } from "styled-system";
 import { CardProps } from "../types";
 
 interface CardCarouselProps extends CardProps {}
 
-interface BeforeCardProps extends CSSProperties, VariantProps {}
+interface BeforeCardProps extends CSSProperties {}
 
-const BeforeCard = styled("div")<BeforeCardProps>(
+const BeforeCard = styled("div")(
   {
     position: "relative",
     width: "calc(350px - 2vmin)",
@@ -141,12 +140,10 @@ export const Card: React.FC<CardProps> = ({
   body,
   end,
   CardBody,
-  variant,
   background,
 }) => {
   return (
     <BeforeCard
-      variant={variant}
       style={{
         background:
           background === undefined ? "rgba(17, 25, 40, 0.75)" : background,
@@ -169,7 +166,6 @@ export const CardCarousel: React.FC<CardCarouselProps> = ({
 }) => {
   return (
     <BeforeCard
-      variant={variant}
       style={{
         background:
           background === undefined ? "rgba(17, 25, 40, 0.75)" : background,

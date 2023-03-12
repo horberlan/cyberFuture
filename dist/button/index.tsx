@@ -220,22 +220,22 @@ const theme: ThemeProps = {
     type: { background: "red" },
   },
 };
-const BeforeButton = styled.button<ButtonProps>`
-  border: 0;
-  outline: 0;
-  transition: 0.4s;
-  margin: 5px;
-
-  &:active {
-    position: relative;
-    top: 5px;
-    box-shadow: none;
+const BeforeButton = styled.button`
+    border: 0;
+    outline: 0;
+    transition:.4s;
+    margin:5px;
+    
+    &:active{
+    position:relative;
+    top:5px;
+    box-shadow:none;
   }
-  ${color}
-  ${space}
-  ${fontSize}
-  ${buttonStyle}
-`;
+    ${color}
+    ${space}
+    ${fontSize}
+    ${buttonStyle}
+  `
 
 const Span = styled.span`
   font-size: 20px;
@@ -275,9 +275,11 @@ const Span = styled.span`
 
 BeforeButton.defaultProps = {
   variant: "primary",
+  backgroundColor: "transparent",
+  type?: "Outlined",
 };
 
-const Button = ({ text, variant, color }: ButtonProps) => {
+const Button: React.FC<ButtonProps> = ({ text, variant, color, type }) => {
   return (
     <ThemeProvider theme={theme}>
       <BeforeButton color={color} variant={variant}>
@@ -287,4 +289,4 @@ const Button = ({ text, variant, color }: ButtonProps) => {
   );
 };
 
-export {CyberButton, Button};
+export {Button, CyberButton};

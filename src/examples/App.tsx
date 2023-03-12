@@ -1,7 +1,30 @@
 import { Button, Card, CardCarousel } from "../lib";
 
-import React from "react";
+import React, { FC } from "react";
 import styled from "styled-components";
+import { ButtonProps } from "../lib/types";
+
+interface CardProps {
+  variant?: string;
+  title?: string;
+  body?: string;
+  background?: string;
+}
+
+interface CardCarouselProps {
+  variant: string;
+  title: string;
+  body: string;
+}
+
+interface CardObject {
+  Component: React.FC<CardProps | CardCarouselProps>;
+  props: CardProps | CardCarouselProps;
+}
+
+interface ButtonObject {
+  props: ButtonProps;
+}
 
 const Flex = styled.div`
   display: flex;
@@ -28,7 +51,8 @@ const App = () => (
 );
 
 export default App;
-const buttons = [
+
+const buttons: ButtonObject[] = [
   {
     props: {
       text: "CyberFuture",

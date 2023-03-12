@@ -1,7 +1,12 @@
-import { Button, Card, CardCarousel } from "../lib";
+import { Card, CardCarousel, CyberButton } from "../lib";
 
+import { ButtonProps } from "../lib/types";
 import React from "react";
 import styled from "styled-components";
+
+interface ButtonObject {
+  props: ButtonProps;
+}
 
 const Flex = styled.div`
   display: flex;
@@ -16,7 +21,7 @@ const App = () => (
   <div>
     <Flex>
       {buttons.map(({ props }, index) => {
-        return <Button key={index} {...props} />;
+        return <CyberButton key={index} {...props} />;
       })}
     </Flex>
     <Flex>
@@ -28,7 +33,8 @@ const App = () => (
 );
 
 export default App;
-const buttons = [
+
+const buttons: ButtonObject[] = [
   {
     props: {
       text: "CyberFuture",

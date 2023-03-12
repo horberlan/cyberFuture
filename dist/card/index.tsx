@@ -1,6 +1,8 @@
-import React from "react";
+import { CardProps } from "../types";
 import styled from "styled-components";
 import { variant } from "styled-system";
+
+interface CardCarouselProps extends CardProps {}
 
 const BeforeCard = styled("div")(
   {
@@ -61,6 +63,7 @@ const BeforeCard = styled("div")(
     },
   })
 );
+
 const CardtTitle = styled.div`
   display: flex;
   word-break: break-all;
@@ -74,6 +77,7 @@ const CardtTitle = styled.div`
   letter-spacing: 0.2em;
   font-weight: bold;
 `;
+
 const CardtBody = styled.div`
   position: relative;
   word-break: break-all;
@@ -115,6 +119,7 @@ const CardtBody = styled.div`
     user-select: none;
   }
 `;
+
 const CardtFooter = styled.div`
   position: relative;
   top: 10%;
@@ -127,14 +132,21 @@ const CardtFooter = styled.div`
   padding: 2% 4%;
   margin: auto auto;
 `;
-export const Card = ({ title, body, end, CardBody, variant, background }) => {
+
+export const Card: React.FC<CardProps> = ({
+  title,
+  body,
+  end,
+  CardBody,
+  background,
+}) => {
   return (
     <BeforeCard
-      variant={variant}
       style={{
         background:
           background === undefined ? "rgba(17, 25, 40, 0.75)" : background,
-      }}>
+      }}
+    >
       <CardtTitle>{title}</CardtTitle>
       <CardtBody>{body}</CardtBody>
       <CardtFooter>{end}</CardtFooter>
@@ -142,7 +154,7 @@ export const Card = ({ title, body, end, CardBody, variant, background }) => {
   );
 };
 
-export const CardCarousel = ({
+export const CardCarousel: React.FC<CardCarouselProps> = ({
   title,
   body,
   end,
@@ -152,11 +164,11 @@ export const CardCarousel = ({
 }) => {
   return (
     <BeforeCard
-      variant={variant}
       style={{
         background:
           background === undefined ? "rgba(17, 25, 40, 0.75)" : background,
-      }}>
+      }}
+    >
       <CardtTitle>{title}</CardtTitle>
       <CardtBody>
         <div>content</div>

@@ -69,6 +69,13 @@ const buttons: ButtonObject[] = [
   },
 ];
 
+const MyContent = (
+  <>
+  <div>content</div>
+  <div>content</div>
+  <div>content</div>
+  </>
+);
 const cards = [
   {
     Component: Card,
@@ -77,6 +84,7 @@ const cards = [
       title: "Matrix Title",
       body: "some content",
       background: `url(${Rose}) center center no-repeat`,
+      CardBody: MyContent,
     },
   },
   {
@@ -85,6 +93,7 @@ const cards = [
       variant: "Rose",
       title: "Rose Title",
       body: "some content",
+      CardBody: MyContent,
     },
   },
   {
@@ -96,6 +105,7 @@ const cards = [
       background: "orange",
       width: "25.5rem",
       height: "40em",
+      CardBody: MyContent,
     },
   },
   {
@@ -104,6 +114,8 @@ const cards = [
       variant: "Matrix",
       title: "Matrix Title",
       body: "some content",
+      CardBody: MyContent,
     },
   },
 ];
+

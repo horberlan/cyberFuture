@@ -174,12 +174,7 @@ export const CardCarousel: React.FC<CardCarouselProps> = ({
       }}>
       <CardtTitle>{title}</CardtTitle>
       <CardtBody>
-        <div>content</div>
-        <div>content</div>
-        <div>content</div>
-        <div>content</div>
-        <div>content</div>
-        <div>content</div>
+      { CardBody }
       </CardtBody>
       <CardtFooter>{end}</CardtFooter>
     </BeforeCard>

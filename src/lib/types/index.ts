@@ -89,4 +89,6 @@ export interface CardProps {
     CardBody?: React.ReactNode;
     variant: string;
     background?: CSSProperties["background"];
+    width?: string;
+    height?: string;
   }

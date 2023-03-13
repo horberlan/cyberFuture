@@ -7,15 +7,12 @@ interface CardCarouselProps extends CardProps {}
 const BeforeCard = styled("div")(
   {
     position: "relative",
-    width: "calc(350px - 2vmin)",
-    height: "30em",
     padding: "calc(1.5% - 1vmin) calc(1% - 1vmin)",
     margin: "20px auto",
     boxSizing: "border-box",
     clipPath:
       "polygon(20% 0%, 100% 0, 100% 20%, 100% 80%, 80% 100%, 0 100%, 0% 80%, 0 0);",
     backdropFilter: "blur(6px) saturate(180%)",
-    // background: `url(${Dots}) no-repeat center`,
     backgroundSize: "cover",
 
     "&:before": {
@@ -139,14 +136,17 @@ export const Card: React.FC<CardProps> = ({
   end,
   CardBody,
   background,
+  width = "calc(350px - 2vmin)",
+  height = "30em",
 }) => {
   return (
     <BeforeCard
       style={{
         background:
           background === undefined ? "rgba(17, 25, 40, 0.75)" : background,
-      }}
-    >
+        width: width,
+        height: height,
+      }}>
       <CardtTitle>{title}</CardtTitle>
       <CardtBody>{body}</CardtBody>
       <CardtFooter>{end}</CardtFooter>
@@ -161,14 +161,17 @@ export const CardCarousel: React.FC<CardCarouselProps> = ({
   CardBody,
   variant,
   background,
+  width = "calc(350px - 2vmin)",
+  height = "30em",
 }) => {
   return (
     <BeforeCard
       style={{
         background:
           background === undefined ? "rgba(17, 25, 40, 0.75)" : background,
-      }}
-    >
+        width: width,
+        height: height,
+      }}>
       <CardtTitle>{title}</CardtTitle>
       <CardtBody>
         <div>content</div>

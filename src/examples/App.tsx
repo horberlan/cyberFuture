@@ -3,7 +3,7 @@ import { Card, CardCarousel, CyberButton } from "../lib";
 import { ButtonProps } from "../lib/types";
 import React from "react";
 import styled from "styled-components";
-
+import Rose from "./test-background.png"
 interface ButtonObject {
   props: ButtonProps;
 }
@@ -76,7 +76,7 @@ const cards = [
       variant: "Matrix",
       title: "Matrix Title",
       body: "some content",
-      background: "#8B0000",
+      background: `url(${Rose}) center center no-repeat`,
     },
   },
   {

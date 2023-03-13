@@ -66,26 +66,7 @@ import { Card } from "cyberfuture";
 />
 ```
 ### Props
-`title` (string, required)
-The title of the card.
-
-`body` (React node, required)
-The content of the card body.
-
-`end` (React node)
-The content of the card footer.
-
-`variant` (string)
-The variant of the card style. Can be one of the following:
-
-* Matrix
-* Rose
-* Punk
-* Gold
-
-`background` (string)
-The background color of the card. Defaults to rgba(17, 25, 40, 0.75).
-
+<ul><li><code>title</code>: Title of the carousel (required).</li><li><code>body</code>: Body of the carousel, not used in this variant.</li><li><code>end</code>: Footer of the carousel, can be any valid JSX element.</li><li><code>CardBody</code>: A required prop to be used with the <code>CardCarousel</code> variant, renders a carousel of cards with this element as a template.</li><li><code>variant</code>: A prop used to customize the colors of the cards. Must be one of <code>"Matrix"</code>, <code>"Rose"</code>, <code>"Punk"</code>, or <code>"Gold"</code>.</li><li><code>background</code>: Background color of the carousel. If not provided, a default color of <code>rgba(17, 25, 40, 0.75)</code> is used.</li><li><code>width</code>: Width of the carousel in CSS units. Default is <code>calc(350px - 2vmin)</code>.</li><li><code>height</code>: Height of the carousel in CSS units. Default is <code>30em</code>.</li></ul>
 ## CardCarousel Component
 A variation of the Card component that includes a horizontal carousel of card body items.
 
@@ -119,6 +100,15 @@ The variant of the card style. Can be one of the following:
 `background` (string)
 The background color of the card. Defaults to rgba(17, 25, 40, 0.75).
 
+### Usage
+```javascript
+<CardCarousel
+  title="My Carousel Title"
+  CardBody={<p>Some text here</p>}
+  variant="Matrix"
+  background="#00FF00"
+/>
+```
 ## CyberInput Component
 The CyberInput component is a reusable React input component with an optional label. It renders an HTML input element with a label if the label prop is provided.
 
@@ -162,5 +152,3 @@ But, we are very busy. Please, be patient...
 <br/>
 <br/>
 <img src="https://media.giphy.com/media/1aIDN81XDJuDK/giphy.gif"/>
-
-

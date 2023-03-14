@@ -1,6 +1,5 @@
 import { CSSProperties } from "styled-components";
 
-// buttons props
 export type ButtonProps = {
   text?: string;
   variant: string;
@@ -89,4 +88,6 @@ export interface CardProps {
     CardBody?: React.ReactNode;
     variant: string;
     background?: CSSProperties["background"];
+    width?: string;
+    height?: string;
   }

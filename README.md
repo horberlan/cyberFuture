@@ -141,4 +141,5 @@ In this example, the CyberInput component is used inside a form. The type prop i
 <br/>
 👩‍💻 We are working on improvements. But, we are very busy. Please, be patient...
 <br/>
+<br/>
 <img src="https://media.giphy.com/media/1aIDN81XDJuDK/giphy.gif"/>

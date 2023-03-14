@@ -1,6 +1,5 @@
 import { CSSProperties } from "styled-components";
 
-// buttons props
 export type ButtonProps = {
   text?: string;
   variant: string;

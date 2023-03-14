@@ -26,16 +26,8 @@
             }
         ]
     },
-    "exclude": [
-        "node_modules",
-        "build",
-        "scripts",
-        "acceptance-tests",
-        "webpack",
-        "jest",
-        "src/setupTests.ts"
-    ],
+    "exclude": ["node_modules", "dist"],
     "types": [
-        "typePatches"
+        "./src/types/index.d.ts"
     ]
 }

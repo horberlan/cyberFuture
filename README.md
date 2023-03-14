@@ -83,10 +83,12 @@ import { CardCarousel } from "cyberfuture";
 ```
 
 ### Props
-<ul><li><code>title</code>: The title of the card (string, required).
-<ul><li><code>end</code>: The content of the card footer (React node).
-<ul><li><code>variant</code>: The variant of the card style (string, required). It can be one of the following:<code>"Matrix"</code>, <code>"Rose"</code>, <code>"Punk"</code>, <code>"Gold"</code>
-<ul><li><code>background</code>: The background color of the card. Default is rgba(17, 25, 40, 0.75).
+<ul>
+<li><code>title</code>: The title of the card (string, required).</li>
+<li><code>end</code>: The content of the card footer (React node).</li>
+<li><code>variant</code>: The variant of the card style (string, required). It can be one of these:<code>"Matrix"</code>, <code>"Rose"</code>, <code>"Punk"</code>, <code>"Gold"</code></li>
+<li><code>background</code>: The background color of the card. Default is rgba(17, 25, 40, 0.75).</li>
+</ul>
 
 ### Usage
 ```javascript
@@ -103,9 +105,11 @@ The CyberInput component is a reusable React input component with an optional la
 ## Props
 The component accepts the following props:
 
-<ul><li><code>type</code>: This is the type of the input element, such as "text", "password", etc (string, optional, default "text").
-<ul><li><code>label</code>: This is the label that will be displayed for the input element (string, optional).
-<ul><li><code>value</code>: The value of the input element (string).
+<ul>
+<li><code>type</code>: This is the type of the input element, such as "text", "password", etc (string, optional, default "text").</li>
+<li><code>label</code>: This is the label that will be displayed for the input element (string, optional).</li>
+<li><code>value</code>: The value of the input element (string).</li>
+</ul>
 
 #### Example Usage
 ```jsx
@@ -136,5 +140,6 @@ In this example, the CyberInput component is used inside a form. The type prop i
 
 <br/>
 👩‍💻 We are working on improvements. But, we are very busy. Please, be patient...
+<br/>
 <br/>
 <img src="https://media.giphy.com/media/1aIDN81XDJuDK/giphy.gif"/>

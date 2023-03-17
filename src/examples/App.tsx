@@ -2,8 +2,9 @@ import { Card, CardCarousel, CyberButton } from "../lib";
 
 import { ButtonProps } from "../lib/types";
 import React from "react";
-import styled from "styled-components";
 import Rose from "./test-background.png";
+import styled from "styled-components";
+
 interface ButtonObject {
   props: ButtonProps;
 }
@@ -19,6 +20,16 @@ const Flex = styled.div`
 
 const App = () => (
   <div>
+    <Flex>
+      {buttons.map(({ props }, index) => {
+        return <CyberButton key={index} {...props} />;
+      })}
+    </Flex>
+    <Flex>
+      {cards.map(({ Component, props }, index) => {
+        return <Component key={index} {...props} />;
+      })}
+    </Flex>
     <Flex>
       {buttons.map(({ props }, index) => {
         return <CyberButton key={index} {...props} />;

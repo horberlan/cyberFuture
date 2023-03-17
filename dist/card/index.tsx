@@ -1,8 +1,8 @@
 import { CardProps } from "../types";
+import React from "react";
 import styled from "styled-components";
 import { variant } from "styled-system";
-
-interface CardCarouselProps extends CardProps {}
+interface CardCarouselProps extends CardProps, Object {}
 
 const BeforeCard = styled("div")(
   {

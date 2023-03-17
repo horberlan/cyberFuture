@@ -4,8 +4,7 @@
   "license": "MIT",
   "description": "The Cyberfuture package provides several components for React that can be used to quickly and easily create styled and customizable user interfaces.",
   "main": "dist/index.ts",
-  "module": "dist/index.ts",
-  "types": "./dist/types/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "keywords": [
     "React",
     "Cyber",

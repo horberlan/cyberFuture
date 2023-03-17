@@ -1,6 +1,6 @@
 {
   "name": "cyberfuture",
-  "version": "0.1.44.bete.0",
+  "version": "0.1.4-7.beta",
   "license": "MIT",
   "description": "The Cyberfuture package provides several components for React that can be used to quickly and easily create styled and customizable user interfaces.",
   "main": "dist/index.ts",

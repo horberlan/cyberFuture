@@ -11,7 +11,7 @@
         "allowJs": true,
         "jsx": "react-jsx",
         "moduleResolution": "node",
-        "rootDir": "src",
+        "rootDir": ".",
         "noImplicitReturns": true,
         "noImplicitThis": true,
         "noImplicitAny": true,

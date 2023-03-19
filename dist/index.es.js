@@ -2,7 +2,7 @@
   /**
    * @license
    * author: koji kanao
-   * cyberfuture.js v0.0.1
+   * cyberfuture.js v0.1.4-9-beta
    * Released under the MIT license.
    */
 

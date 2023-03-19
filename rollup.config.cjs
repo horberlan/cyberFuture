@@ -90,7 +90,6 @@ module.exports = [
     output: [
       {
         file: pkg.main,
-        format: "cjs",
         sourcemap: "inline",
         banner,
         exports: "default",

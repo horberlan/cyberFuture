@@ -1,6 +1,6 @@
 {
   "name": "cyberfuture",
-  "version": "0.1.5-beta",
+  "version": "0.1.5-1-beta",
   "description": "The Cyberfuture package provides several components for React that can be used to quickly and easily create styled and customizable user interfaces.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",

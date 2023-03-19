@@ -5,7 +5,8 @@
   <img align="right" alt="Snyk Vulnerabilities for npm package" src="https://img.shields.io/snyk/vulnerabilities/npm/cyberfuture?style=flat-square">
 </div>
 <br/><br/>
-Times change and apps need to adapt to those changes
+
+Times change and apps need to adapt to those changes!
 
 The Cyberfuture package provides several components for React that can be used to quickly and easily create styled user interfaces.
 

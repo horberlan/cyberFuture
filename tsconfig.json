@@ -1,33 +1,11 @@
 {
-    "compilerOptions": {
-        "outDir": "build/dist",
-        "module": "commonjs",
-        "target": "es5",
-        "lib": [
-            "es6",
-            "dom"
-        ],
-        "sourceMap": true,
-        "allowJs": true,
-        "jsx": "react-jsx",
-        "moduleResolution": "node",
-        "rootDir": ".",
-        "noImplicitReturns": true,
-        "noImplicitThis": true,
-        "noImplicitAny": true,
-        "strictNullChecks": true,
-        "esModuleInterop": true,
-        "allowSyntheticDefaultImports": true,
-        "plugins": [
-            {
-                "transform": "typescript-plugin-styled-components",
-                "type": "config",
-                "ssr": true
-            }
-        ]
-    },
-    "exclude": ["node_modules", "dist"],
-    "types": [
-        "./src/types/index.d.ts"
-    ]
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
 }

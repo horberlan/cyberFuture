@@ -5,7 +5,8 @@
   <img align="right" alt="Snyk Vulnerabilities for npm package" src="https://img.shields.io/snyk/vulnerabilities/npm/cyberfuture?style=flat-square">
 </div>
 <br/><br/>
-Times change and apps need to adapt to those changes❗
+
+Times change and apps need to adapt to those changes!
 
 The Cyberfuture package provides several components for React that can be used to quickly and easily create styled user interfaces.
 
@@ -139,7 +140,7 @@ In this example, the CyberInput component is used inside a form. The type prop i
 
 
 <br/>
-👩‍💻 We are working on improvements. But, we are very busy. Please, be patient...
+We are working on improvements. But, we are very busy. Please, be patient...
 <br/>
 <br/>
 <img src="https://media.giphy.com/media/1aIDN81XDJuDK/giphy.gif"/>

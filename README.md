@@ -10,7 +10,7 @@ Times change and apps need to adapt to those changes!
 
 The Cyberfuture package provides several components for React that can be used to quickly and easily create styled user interfaces.
 
-All of these components can be customized using CSS variables or by passing in props to modify their appearance. 
+All of these components can be customized using CSS variables or by passing in props to modify their appearance.
 
 By using the Cyberfuture package, developers can save time and effort when building user interfaces. The purpose is to create more visually appealing and engaging experiences for users.
 
@@ -56,7 +56,7 @@ A styled card component with customized styles and responsive layout. It include
 ```javascript
 import { Card } from "cyberfuture";
 
-<Card 
+<Card
   title="Card Title"
   body={<div>Card Body</div>}
   end={<div>Card Footer</div>}
@@ -75,7 +75,7 @@ This is a variation of the Card component that includes a horizontal carousel wi
 ```javascript
 import { CardCarousel } from "cyberfuture";
 
-<CardCarousel 
+<CardCarousel
   title="Carousel Title"
   end={<div>Carousel Footer</div>}
   variant="Matrix"
